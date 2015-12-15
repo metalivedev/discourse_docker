@@ -8,7 +8,7 @@ RUN useradd discourse -s /bin/bash -m -U &&\
     mkdir -p /var/www && cd /var/www &&\
      git clone https://github.com/metalivedev/discourse.git &&\
      cd discourse &&\
-      git remote set-branches --add origin notislocal &&\
+      git remote set-branches --add origin metalivedev &&\
     chown -R discourse:discourse /var/www/discourse &&\
     cd /var/www/discourse &&\
      sudo -u discourse bundle install --deployment \
